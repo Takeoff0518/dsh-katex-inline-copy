@@ -4,6 +4,26 @@
   "description": "Copy KaTeX-rendered formulas from DSH chat as $...$ / $$...$$ LaTeX source, like Gemini web does.",
   "type": "module",
   "license": "MIT",
+  "author": "Takeoff0518",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "harness",
+    "katex",
+    "latex",
+    "copy",
+    "clipboard",
+    "math"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Takeoff0518/dsh-katex-inline-copy.git"
+  },
+  "homepage": "https://github.com/Takeoff0518/dsh-katex-inline-copy#readme",
+  "bugs": {
+    "url": "https://github.com/Takeoff0518/dsh-katex-inline-copy/issues"
+  },
   "main": "lib/index.js",
   "exports": {
     ".": "./lib/index.js",

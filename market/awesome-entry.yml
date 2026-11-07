@@ -1,0 +1,18 @@
+# awesome-dsh-plugin 条目（上架用）
+#
+# 用法：把本文件内容另存为 awesome-dsh-plugin 仓库里的
+#   data/plugins/Takeoff0518__dsh-katex-inline-copy.yml
+# 然后向 https://github.com/awesome-dsh-plugin/awesome-dsh-plugin 提 PR。
+#
+# 规则要点（见 contributing.md）：
+# - 一个 PR 只加条目文件，不要手改 README（README 由脚本生成）
+# - 仓库需满 1 天；本仓库创建于 2026-11-07，次日再提
+# - 仓库需要 dsh.bundle 清单（已有）与 dsh-plugin topic（待加）
+# - description 必须与代码一致、以句号结尾、不带营销词
+
+url: https://github.com/Takeoff0518/dsh-katex-inline-copy
+name: Takeoff0518/dsh-katex-inline-copy
+category: ui
+description:
+  en: "Makes copying math from DSH chat put LaTeX source ($...$ or $$...$$) on the clipboard instead of rendered KaTeX markup; code blocks and the prompt box keep native copy behavior."
+  zh: "在 DSH 对话里复制含公式的内容时，剪贴板里得到 $...$ / $$...$$ 的 LaTeX 源码，而不是 KaTeX 渲染碎片；代码块与输入框保持原生复制。"
