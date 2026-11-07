@@ -3,6 +3,8 @@
 在 DeepSeek Harness 的对话里复制带公式的内容时，剪贴板里拿到的是
 `$...$` / `$$...$$` 的 LaTeX 源码，而不是 KaTeX 渲染后的一堆 `span`。
 
+![选中含公式的段落，剪贴板里得到 LaTeX 源码](docs/preview.png)
+
 效果与 Gemini Web 的「选中复制公式不崩」一致：
 
 ```text
@@ -14,8 +16,10 @@ $$T(n) = aT\left(\frac{n}{b}\right) + f(n)$$
 ## 安装
 
 ```powershell
-# 插件管理器里按绝对路径安装（与 dsh-chat-avatar 相同的方式）
-# 也可以在 设置 → 插件 里选择本目录
+# 从 GitHub 直接安装
+dsh plugin add github:Takeoff0518/dsh-katex-inline-copy
+
+# 或者在 设置 → 插件 里按绝对路径安装
 ```
 
 安装后立即生效，无需重启。
