@@ -1,0 +1,7 @@
+# dsh-katex-inline-copy bundle patch
+#
+# 一个 loader 条目：Node 半边是空插件（功能全在浏览器），客户端由
+# package.json 的 `dsh.client` 声明，Web 端加载 lib/client.js。
+- insert:
+    - id: katex-inline-copy
+      name: 'dsh-katex-inline-copy'

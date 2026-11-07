@@ -1,0 +1,43 @@
+{
+  "name": "dsh-katex-inline-copy",
+  "version": "0.1.0",
+  "description": "Copy KaTeX-rendered formulas from DSH chat as $...$ / $$...$$ LaTeX source, like Gemini web does.",
+  "type": "module",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "serve": "node tools/serve.mjs"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^26.6.6",
+    "esbuild": "^0.25.0",
+    "jsdom": "^26.0.0",
+    "katex": "^0.16.22",
+    "typescript": "^5.7.0"
+  }
+}
